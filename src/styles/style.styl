@@ -1,0 +1,81 @@
+@import "general.styl"
+
+.search-list
+  box-shadow: 0 0 10px -5px #000;
+  background-color: #fefefe;
+  border: 1px solid #e5e5e5;
+  position: absolute;
+  margin-top: -1px;
+  width: 100%;
+  z-index: 1;
+  top: 100%;
+  .media
+    padding: 5px 12px;
+
+.media
+  align-items: center;
+  .media-body
+    .contact-name
+      margin: 0;
+      color: #676a6c;
+    .contact-remove
+        display: none;
+        color: #fab43d;
+        font-size: 14px;
+        position: absolute;
+  .contact-photo
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+.list-contacts
+  box-shadow: 0 0 10px -5px #000;
+  margin: 15px 0;
+  .contact-header,
+  .contact-body
+    background-color: #ffffff;
+    .cell
+      padding: 15px;
+      display: block;
+  .contact-header
+    .cell
+      color: #676a6c;
+      font-weight: 700;
+  .contact-body
+    overflow: hidden;
+    .row
+      border-top: 1px solid #e5e5e5;
+      &:first-child
+        background: -webkit-linear-gradient(#e5e5e5 0, #fff 15%, #fff);
+        background: -o-linear-gradient(#e5e5e5 0, #fff 15%, #fff);
+        background: -moz-linear-gradient(#e5e5e5 0, #fff 15%, #fff);
+        background: linear-gradient(#e5e5e5 0, #fff 15%, #fff);
+      &:hover
+        .contact-remove
+          display: block !important;
+      .col-sm-4
+        border-right: 1px solid #e5e5e5;
+      .contact-description
+        font-size: 13px;
+        margin: 0;
+
+.contact-pagination
+  .prev-page,
+  .next-page
+    font-weight: 700;
+    color: 959595;
+    cursor: pointer;
+    i
+      color: #f9bc55;
+      line-height: 0;
+      font-size: 20px;
+      vertical-align: middle;
+  .next-page
+    float: right;
+
+@media screen and (max-width: 576px)
+  .btn-search
+    margin-top: 15px;
+    width: 100%;

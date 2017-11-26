@@ -1,0 +1,95 @@
+html
+  font-size: 100%;
+  font-family: sans-serif;
+
+body
+  background-color: #e5e5e5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding:0;
+  margin: 0;
+  color: #333;
+  letter-spacing: 0;
+
+header
+  padding-top: 2.0rem;
+  padding-bottom: 2.5rem;
+  h3
+    color: #616161;
+    span
+      color: #95989a;
+      font-weight: normal;
+
+label
+  color: #676a6c;
+  font-weight: 500;
+
+main
+  flex: 1;
+
+footer
+  padding-top: 2.5rem;
+
+form
+  span.required
+    color: #ff0000;
+
+.form-control
+  box-shadow: 0 0 10px -5px #000;
+  border: 1px solid #cfd1d3 !important;
+  min-height: 38px;
+  border-radius: 0 !important;
+
+.input-group
+  .form-control
+    padding-left: 40px;
+    width: 100%;
+    border: 0;
+    & ~ i
+      position: absolute;
+      padding: 9px 12px;
+      font-size: 20px;
+      color: #fab43d;
+      z-index: 3;
+      left: 0;
+
+.btn
+  box-shadow: 0 0 10px -5px #000;
+  cursor: pointer;
+
+.btn.btn-icon
+  position: relative;
+  padding-left: 40px;
+  i
+    position: absolute;
+    padding: 0 12px;
+    font-size: 20px;
+    left: 0;
+
+.btn-primary
+  background-color: #fab43d;
+  border-color: #fab43d;
+  border-radius: 2px;
+  min-width: 200px;
+  &:hover
+    background-color: #f9bc55;
+    border-color: #f9bc55;
+  &:focus
+    box-shadow: none;
+  i
+    color: #ffffff;
+
+.modal-dialog
+  .modal-content
+    border-radius: 0;
+    border: 1px solid #dddddd;
+    .modal-title
+      color: 676a6c;
+    .modal-body
+      background-color: #f9f9f9;
+      padding: 35px 50px;
+    form
+      margin-bottom: 0;
+      .last-form-group
+        margin-bottom: 2rem;
